@@ -1,0 +1,196 @@
+/* Estilo geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: rgb(85, 85, 85);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Estilo da barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid #8d6e63;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #5c6bc0;
+}
+
+.search-bar button {
+    margin-left: 10px;
+    background-color: #e57373;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Botão de navegação */
+nav button {
+    background-color: #e57373;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Destaques */
+.destaques {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.destaques h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #5c6bc0;
+    border-bottom: 2px solid #5c6bc0;
+    display: inline-block;
+}
+
+/* Grid de cartões */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffe0b2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #6d4c41;
+}
+
+.card p {
+    margin: 0;
+    color: #4e342e;
+    font-size: 14px;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(45deg, rgb(51, 51, 51), rgb(85, 85, 85));
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+footer .company-info {
+    margin-bottom: 20px;
+}
+
+footer .company-info h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+footer .company-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer .company-info ul li {
+    margin: 5px 0;
+}
+
+footer .company-info ul li a {
+    color: #ffa726;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .company-info ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #ccc;
+}

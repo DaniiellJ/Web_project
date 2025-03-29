@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Recuperação de Senha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tela de Login -->
+    <div id="tela-login" class="tela">
+        <div class="login-container">
+            <h1>Bem Vindo!</h1>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="options">
+                <a href="#" onclick="mostrarCadastro()">Crie Sua Conta</a>
+                <a href="#" onclick="mostrarRecuperarSenha()">Esqueceu Sua Senha?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Cadastro -->
+    <div id="tela-cadastro" class="tela" style="display: none;">
+        <div class="login-container">
+            <h1>Crie Sua Conta</h1>
+            <form id="cadastro-form">
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                </div>
+                <div class="input-group">
+                    <label for="email-cadastro">Email:</label>
+                    <input type="email" id="email-cadastro" name="email-cadastro" required placeholder="Digite seu email">
+                </div>
+                <div class="input-group">
+                    <label for="senha-cadastro">Senha:</label>
+                    <input type="password" id="senha-cadastro" name="senha-cadastro" required placeholder="Digite sua senha">
+                </div>
+                <div class="input-group">
+                    <label for="confirmar-senha">Confirmar Senha:</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" required placeholder="Confirme sua senha">
+                </div>
+                <div id="mensagem-erro" style="color: red; display: none;">
+                    As senhas não coincidem. Por favor, verifique e tente novamente.
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <div class="options">
+                <a href="#" onclick="mostrarLogin()">Voltar para o Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tela de Recuperação de Senha -->
+    <div id="tela-recuperar-senha" class="tela" style="display: none;">
+        <div class="login-container">
+            <h1>Recuperar Senha</h1>
+            <form id="recuperar-senha-form">
+                <div class="input-group">
+                    <label for="email-recuperar">Email:</label>
+                    <input type="email" id="email-recuperar" name="email-recuperar" required placeholder="Digite seu email">
+                </div>
+                <button type="submit">Enviar Link de Recuperação</button>
+            </form>
+            <div class="options">
+                <a href="#" onclick="mostrarLogin()">Voltar para o Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Digite o que procura..." />
+            <button>Procurar</button>
+        </div>
+        <nav>
+            <button onclick="logout()">Logout</button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="destaques">
+            <h2>Destaques</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="images\perfil.png" alt="Garfield">
+                    <h3>Garfield</h3>
+                    <p>4 Anos</p>
+                </div>
+                <div class="card">
+                    <img src="images\perfil.png" alt="Luke">
+                    <h3>Luke</h3>
+                    <p>5 Anos</p>
+                </div>
+                <div class="card">
+                    <img src="images\perfil.png" alt="Perigo">
+                    <h3>Perigo</h3>
+                    <p>6 Anos</p>
+                </div>
+                <div class="card">
+                    <img src="images\perfil.png" alt="Zeus">
+                    <h3>Zeus</h3>
+                    <p>8 Anos</p>
+                </div>
+                <div class="card">
+                    <img src="images\perfil.png" alt="Noturno">
+                    <h3>Noturno</h3>
+                    <p>2 Anos</p>
+                </div>
+                <div class="card">
+                    <img src="images\perfil.png" alt="Pica-Pau">
+                    <h3>Pica-Pau</h3>
+                    <p>15 Anos</p>
+                </div>
+                <div class="card">
+                    <img src="images\perfil.png" alt="Zoinho">
+                    <h3>Zoinho</h3>
+                    <p>3 Anos</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="company-info">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <p>YEAR © All rights reserved – Company Name</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
